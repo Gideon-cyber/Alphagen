@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <section class="full-container">
+        <aside>
+          <div class="top">
+            <div class="logo">
+              <img src="images/Logo.svg" alt="" />
+            </div>
+            <div class="close" id="close-btn">
+              <span class="material-icons-sharp">close</span>
+            </div>
+          </div>
+  
+          <div class="sidebar">
+            <a href="#">
+              <!-- <span class="material-icons-sharp">home</span> -->
+              <img src="/images/icons/Home.svg" alt="Home icon" />
+              <p>Home</p>
+            </a>
+            <a href="#" class="active">
+              <!-- <span class="material-icons-sharp">library_add</span> -->
+              <img src="/images/icons/Plus.svg" alt="plus icon" />
+              <p>Create DP</p>
+            </a>
+            <a href="#">
+              <!-- <span class="material-icons-sharp">poll</span> -->
+              <img src="/images/icons/Chart.svg" alt="chart icon" />
+              <p>My DP'S</p>
+            </a>
+            <a href="#">
+              <!-- <span class="material-icons-sharp">person</span> -->
+              <img src="/images/icons/Profile.svg" alt="profile icon" />
+              <p>Profile</p>
+            </a>
+            <a href="#">
+              <!-- <span class="material-icons-sharp">logout</span> -->
+              <img src="/images/icons/Logout.svg" alt="logout icon" />
+              <p>Log out</p>
+            </a>
+          </div>
+        </aside>
+        <!-- END OF ASIDE SECTION -->
+  
+        <main>
+          <h1>Create a new DP</h1>
+  
+          <div class="step1">
+            <div class="stepbar content">
+              <div class="basic pad">
+                <div class="circle marg">1</div>
+                <p class="marg">Basic Information</p>
+                <div class="line"></div>
+              </div>
+              <div class="locate pad">
+                <div class="circle marg purp1 purp2">2</div>
+                <p class="marg purp3">Set Name & Avatar Location</p>
+                <div class="line purp2"></div>
+              </div>
+              <div class="preview pad">
+                <div class="circle marg">3</div>
+                <p class="marg">Preview</p>
+              </div>
+            </div>
+  
+            <!-- TEXT CONTENT STRUCTURE -->
+  
+            <div class="text-container content">
+  
+              <div class="avatar marg-top">
+                <h3 class="pad-bot">Avatar Shape</h3>
+  
+                <div>
+                    <input class="pad-bot" type="radio" name="shape" value="circle"/><p>Circle</p>
+                    <input type="radio" name="shape" value="square"/><p>Square</p>
+                </div>
+                
+              </div>
+
+              <div class="title marg-top">
+                <h3 class="pad-bot">Set Text Preference</h3>
+
+                <div class="flex">
+                  <input class="width-bord" placeholder="Enter a text" type="text" id="enter-txt" />
+
+                  <select class="width-bord font" name="fontlist" id="fonts" form="fontform">
+                    <option value="arial">Arial</option>
+                    <option value="Roboto">Roboto</option>
+                    <option value="Poppins">Poppins</option>
+                  </select>
+
+                  <select class="width-bord font numb" name="numblist" id="fontsize" form="numbform">
+                    <option value="twelve">12</option>
+                    <option value="sixteen">16</option>
+                    <option value="twenty-four">24
+                    <option value="thirty">30</option>
+                    <option value="thirty-six">36</option>
+                    </option>
+                  </select>
+
+                  <div class="width-bord styling bold">
+                    <strong>B</strong>
+                  </div>
+    
+                  <div class="width-bord styling italic">
+                    <em>I</em>
+                  </div>
+    
+                  <div class="width-bord styling underline">
+                    U
+                  </div>
+                </div>
+                
+              </div>
+
+
+  
+              <!-- UPLOADING PHOTOS -->
+  
+              <div class="marg-top note visibility">
+                <p class="pad-bot">*Drag the shapes to desired position</p>
+                <div class="upload">
+                  <img id="uploadedImg">
+                  <div class="add-img">image</div>
+                  <input class="width-bord add-txt" placeholder="Enter a text" type="text" id="enter-txt" disabled/>
+                </img>
+                </div>
+              </div>
+  
+              <div class="next browse">
+                <a href="preview.html">Next</a>
+              </div>
+
+              <div class="back next browse">
+                <a href="createdp.html">Back</a>
+              </div>
+
+            </div>
+          </div>
+        </main>
+      </section>
+      <script src="style.js"></script>
+</body>
+</html>

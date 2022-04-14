@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Log in here</title>
+    <link rel="stylesheet" href="/register.css" />
+  </head>
+  <body>
+    <section class="sign-up">
+      <div class="container">
+        <div class="box-fit">
+          <div class="card">
+            <h3>Log in</h3>
+            <p>Welcome back</p>
+          </div>
+          <div class="google">
+            <img src="/images/igoogle.svg" alt="google logo" />
+            <p>Sign in with Google</p>
+          </div>
+          <div class="or">
+            <hr />
+            <span>OR</span>
+            <hr />
+          </div>
+          <div class="form">
+            <form id="loginForm" method="POST" action="https://alphagenapi.herokuapp.com/api/v1/user/login">
+              <input type="email" id="email" placeholder="Email" name="email"  required />
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                name="password"
+                required
+              />
+
+              <button type="submit">Log in</button>
+            </form>
+          </div>
+          <div class="signInQuestion">
+            Are you a new user?
+            <a href="register.html">Sign up</a>
+            <div><a href="#">Forgot password</a><div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/script.js"></script>
+  </body>
+</html>

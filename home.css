@@ -1,0 +1,36 @@
+header {
+  display: none;
+}
+
+main {
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    display: block;
+  }
+  aside {
+    display: none;
+  }
+
+  main.home {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+  }
+
+  /* .overlay {
+    display: none;
+  } */
+
+  .mobile-menu a:active {
+    background: var(--clr-purple);
+    border-radius: 6px;
+    color: var(--clr-white);
+    fill: var(--clr-white);
+  }
+}

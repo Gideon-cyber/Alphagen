@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Create DP</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/create.css" />
+  </head>
+  <body>
+    <section class="full-container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="images/Logo.svg" alt="" />
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="home.html">
+            <img src="/images/icons/Home.svg" alt="Home icon" />
+            <p>Home</p>
+          </a>
+          <a href="createdp.html" class="active">
+            <img src="/images/icons/Plus.svg" alt="plus icon" />
+            <p>Create DP</p>
+          </a>
+          <a href="mydp.html">
+            <img src="/images/icons/Chart.svg" alt="chart icon" />
+            <p>My DP'S</p>
+          </a>
+          <a href="#">
+            <img src="/images/icons/Profile.svg" alt="profile icon" />
+            <p>Profile</p>
+          </a>
+          <a href="#" class="logout">
+            <!-- <span class="material-icons-sharp">logout</span> -->
+            <img src="/images/icons/Logout.svg" alt="logout icon" />
+            <p>Log out</p>
+          </a>
+        </div>
+      </aside>
+      <!-- END OF ASIDE SECTION -->
+
+      <main>
+        <h1>Create a new DP</h1>
+
+        <div class="step1">
+          <div class="stepbar content">
+            <div class="basic pad">
+              <div class="circle marg">1</div>
+              <p class="marg">Basic Information</p>
+              <div class="line"></div>
+            </div>
+            <div class="locate pad">
+              <div class="circle marg">2</div>
+              <p class="marg">Set Name & Avatar Location</p>
+              <div class="line"></div>
+            </div>
+            <div class="preview pad">
+              <div class="circle marg">3</div>
+              <p class="marg">Preview</p>
+            </div>
+          </div>
+
+          <!-- TEXT CONTENT STRUCTURE -->
+          <form
+            method="POST"
+            enctype="multipart/form-data"
+            action="https://alphagenapi.herokuapp.com/api/v1/banner/create"
+            id="bannerCreateForm"
+          >
+            <div class="text-container content">
+              <div class="title marg-top">
+                <h3 class="pad-bot">Title</h3>
+                <input
+                  class="width-bord"
+                  type="text"
+                  id="title"
+                  name="title"
+                  required
+                />
+              </div>
+
+              <div class="description marg-top">
+                <h3 class="pad-bot">Description</h3>
+                <textarea
+                  class="width-bord"
+                  id="description"
+                  rows="4"
+                  name="description"
+                ></textarea>
+              </div>
+
+              <div class="category marg-top">
+                <h3 class="pad-bot">Category</h3>
+                <input
+                  class="width-bord"
+                  type="text"
+                  id="category"
+                  name="category"
+                />
+              </div>
+
+              <div class="visibility marg-top">
+                <h3 class="pad-bot">Visibility</h3>
+
+                <div class="pad-bot rad-but">
+                  <input
+                    class="height"
+                    type="radio"
+                    name="privacy"
+                    value="public"
+                  />Public - Accessible via the homepage, DP listings and direct
+                  link
+                </div>
+                <div class="rad-but">
+                  <input
+                    class="height"
+                    type="radio"
+                    name="privacy"
+                    value="private"
+                  />Private - Only accessible via direct link
+                </div>
+              </div>
+
+              <!-- BROWSE FOR DP TO UPLOAD -->
+
+              <div class="marg-top">
+                <h3 class="pad-bot">Upload DP</h3>
+
+                <div class="drop width-bord pad-bot">
+                  <div class="db-align">
+                    <!-- <div class="drag">
+                    Drag your document or image here to start uploading
+                  </div>
+                  <div class="or">
+                    <hr />
+                    <span>OR</span>
+                    <hr />
+                  </div> -->
+                    <div class="browse">
+                      <input
+                        type="file"
+                        name="bannerdp"
+                        accept="image/*"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="note visibility marg-top">
+                Note - Maximum size of the image should be 10MB
+              </div>
+
+              <button type="submit" class="next browse">
+                <div class="next">
+                  Next
+                  <!-- next location.html-->
+                </div>
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

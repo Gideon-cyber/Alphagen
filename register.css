@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Public+Sans:wght@300;400;700&display=swap");
+
+/***************ROOT VARIABLES******************/
+
+:root {
+  --clr-purple: #7d83d5;
+  --clr-black: #474747;
+  --clr-grey: #b1b1b1;
+  --clr-lightGrey: #e2e2e2;
+  --clr-veryLightGrey: #f2f2f2;
+  --clr-white: #fbfbfb;
+  --clr-background: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Public Sans", sans-serif; */
+}
+
+/**********Full page width************/
+.sign-up {
+  width: 100%;
+  height: 100vh;
+  background: var(--clr-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**********White sign-up box************/
+.container {
+  width: 31.4375rem;
+  height: 34.704375rem;
+  /* max-width: 550px; */
+  background: var(--clr-white);
+  text-align: center;
+  border-radius: 2.125rem;
+}
+
+/**********Aligning sign-up box************/
+.box-fit {
+  width: 66.5%;
+  margin: 0 auto;
+}
+
+/**********Text at top of box***********/
+.card {
+  margin: 3.75rem 0 2.5rem 0;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  color: var(--clr-black);
+  margin-bottom: 0.3125rem;
+}
+
+.card p {
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--clr-grey);
+}
+
+/**********Google sign up box************/
+.google {
+  width: 100%;
+  height: 2.6875rem;
+  display: flex;
+  flex: 1;
+  gap: 0.625rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 0.0625rem solid var(--clr-grey);
+  border-radius: 0.46625rem;
+}
+
+.google img {
+  width: 1.375rem;
+}
+
+.google p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-black);
+}
+
+/**********OR box************/
+div.or {
+  width: 100%;
+  border: none;
+  margin: 0.3125rem auto;
+  overflow: hidden;
+}
+
+div.or span {
+  margin: 0.0625rem auto;
+  font-size: 0.78125rem;
+  line-height: 1rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  color: var(--clr-grey);
+}
+
+div.or hr {
+  display: inline-block;
+  line-height: 0.75rem;
+  width: 8.875rem;
+  margin: 0.25rem auto;
+  color: var(--clr-lightGrey);
+  opacity: 0.2;
+}
+
+/**********Form box************/
+.form {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 4px;
+}
+
+div.form form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.form input {
+  width: 100%;
+  height: 2.6875rem;
+  flex: 1;
+  background-color: var(--clr-white);
+  margin: 0.3125 auto;
+  padding-left: 1.8125rem;
+  font-size: 0.78125rem;
+  font-weight: 600;
+  border: 0.0625rem solid var(--clr-grey);
+  border-radius: 0.46625rem;
+}
+
+.form input::placeholder {
+  color: var(--clr-grey);
+}
+
+.form button {
+  width: 100%;
+  height: 2.6875rem;
+  background-color: var(--clr-purple);
+  margin: 1.25rem auto;
+  padding: 0 1.125rem;
+  color: var(--clr-white);
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0.0625rem solid var(--clr-purple);
+  border-radius: 0.46625rem;
+  cursor: pointer;
+}
+
+/**********Sign in question************/
+.signInQuestion {
+  color: var(--clr-black);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.signInQuestion a {
+  color: var(--clr-purple);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signInQuestion div {
+  margin-top: 1.375rem;
+}
+
+/*********MOBILE SCREENS********/
+
+@media only screen and (max-width: 767px) {
+  /**********White sign-up box************/
+  .container {
+    width: 95%;
+    height: 55%;
+    /* max-width: 550px; */
+    background: var(--clr-white);
+    text-align: center;
+    border-radius: 1.8rem;
+  }
+
+  .box-fit {
+    width: 80%;
+  }
+
+  .card {
+    margin: 2rem 0 1.5rem 0;
+  }
+
+  div.or hr {
+    width: 7.875rem;
+  }
+}
